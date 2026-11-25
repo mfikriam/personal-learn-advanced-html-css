@@ -107,6 +107,7 @@ ul {
 .btn {
   font-size: 16px;
   text-decoration: none;
+  padding: 15px 30px;
 }
 
 .btn-primary:link,
@@ -135,6 +136,7 @@ ul {
 
 .highlight {
   color: #ffffff;
+  padding: 5px 10px;
 }
 
 .highlight-primary {
@@ -147,6 +149,14 @@ ul {
 
 .highlight-tertiary {
   background-color: #ff922b;
+}
+
+.logo-md {
+  width: 100px;
+}
+
+.logo-sm {
+  width: 80px;
 }
 
 /* -------------------------- SECTIONS -------------------------- */
@@ -163,18 +173,28 @@ ul {
   text-align: center;
 }
 
-/* ------- CTA SECTION ------- */
-
-.cta-section {
-  text-align: center;
+.features-img {
+  width: 400px;
 }
 
+/* ------- CTA SECTION ------- */
+
+/* .cta-section {
+} */
+
 .cta-card {
+  text-align: center;
   background-color: #339af0;
+  width: 1000px;
+  padding: 100px 200px;
 }
 
 /* ------- FOOTER ------- */
 
 .footer {
   text-align: center;
+}
+
+.social-icon {
+  width: 20px;
 }
