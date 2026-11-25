@@ -41,11 +41,24 @@ Shade: #212529 (Graphite)
 White: #ffffff (White)
 Black: #000000 (Black)
 
+------------- BORDER RADIUS -------------
+
+4px / 8px / 20px
+
+------------- SPACING SYSTEM -------------
+
+5px / 10px / 15px / 20px / 25px / 30px
+40px / 50px / 60px / 70px / 80px / 90px / 100px
+125px / 150px / 300px
+400px / 500px
+
 */
 
 /* -------------------------- GLOBAL STYLES -------------------------- */
 
-/* Add in universal selector later to remove default spacing properties */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -92,10 +105,15 @@ p {
 a {
   text-decoration: none;
   font-size: 16px;
+  display: inline-block;
 }
 
 ul {
   list-style: none;
+}
+
+span {
+  display: inline-block;
 }
 
 .small-text {
@@ -108,6 +126,7 @@ ul {
   font-size: 16px;
   text-decoration: none;
   padding: 15px 30px;
+  border-radius: 8px;
 }
 
 .btn-primary:link,
@@ -155,6 +174,7 @@ ul {
 .highlight {
   color: #ffffff;
   padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .highlight-primary {
@@ -179,6 +199,27 @@ ul {
 
 /* -------------------------- SECTIONS -------------------------- */
 
+/* ------- NAVBAR ------- */
+
+.navbar {
+  margin-bottom: 200px;
+}
+
+/* ------- HERO SECTION ------- */
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+.hero-heading {
+  margin-bottom: 10px;
+}
+
+.hero-paragraph {
+  margin-bottom: 50px;
+}
+
 /* ------- HERO SECTION ------- */
 
 .hero-section {
@@ -187,8 +228,13 @@ ul {
 
 /* ------- FEATURES SECTION ------- */
 
+.features-section {
+  margin-bottom: 300px;
+}
+
 .features-main-heading {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .features-img {
@@ -197,14 +243,16 @@ ul {
 
 /* ------- CTA SECTION ------- */
 
-/* .cta-section {
-} */
+.cta-section {
+  margin-bottom: 300px;
+}
 
 .cta-card {
   text-align: center;
   background-color: #339af0;
   width: 1000px;
   padding: 100px 200px;
+  border-radius: 20px;
 }
 
 /* ------- FOOTER ------- */
@@ -213,6 +261,6 @@ ul {
   text-align: center;
 }
 
-.social-icon {
+.social-icons {
   width: 20px;
 }
